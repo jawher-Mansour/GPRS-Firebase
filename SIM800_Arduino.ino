@@ -2,7 +2,7 @@
 
 SoftwareSerial gprs(2, 3); // RX, TX pins of the SIM800 chip
 
-String FirebaseCloudFunctionURL="http://xxxxxx.cloudfunctions.net/write?device=Noun_of_the_Field_you_want_to_write_your_Data_to"
+String FirebaseCloudFunctionURL="http://xxxxxx.cloudfunctions.net/write?device=Noun_of_the_Field_you_want_to_write_your_Data_to";
 
 
 int8_t answer;
@@ -92,9 +92,9 @@ bailout :
                      if(sendATcommand2("AT+HTTPPARA=\"CID\",1","OK","ERROR",2000)== 1)
                     {
                             
-                    w="AT+HTTPPARA=""URL"",";
+  String                    w="AT+HTTPPARA=""URL"",";
                       w+=FirebaseCloudFunctionURL;
-                       w+= Data
+                       w+= Data;
                         char* write=  w.c_str();
 
                                   
