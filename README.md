@@ -7,6 +7,7 @@ before using this code , you have to upload cloud functions to your firebase aco
 2-after downloading and installing Node Js , u need to open command prompt and write the following commands 
        *npm install -g firebase-tools
        *firebase login
+       
 3-Go to firebase project directory that u created on your computer 
 
 4-Back to command prompt where you will enter the following command and then follow the orders 
